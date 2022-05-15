@@ -17,11 +17,17 @@ Rectangle::Rectangle(int l, int w) {
 Rectangle::~Rectangle() {
   cout << "Rectangle Destructor called" << endl;
 }
-
+void Rectangle::setlength(int l) {
+	length = l;
+}
+void Rectangle::setwidth(int w) {
+	width = w;
+}
+int Rectangle::calcArea() {
+  return length * width;
+}
 void Rectangle::display() {
    cout << "Rectangle Area = " << calcArea() << endl;
 }
 
-int Rectangle::calcArea() {
-  return length * width;
-}
+

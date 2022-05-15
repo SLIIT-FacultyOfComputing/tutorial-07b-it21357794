@@ -9,7 +9,7 @@ int main() {
     myItem.display();
     Item myItem2(100, 1000);
     myItem2.setDiscount(20);
-    myItem2.display();
+    myItem2.display(); 
     
     return 0;
 }

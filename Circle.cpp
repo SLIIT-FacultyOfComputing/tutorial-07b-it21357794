@@ -14,10 +14,14 @@ Circle::Circle(int r) {
 Circle::~Circle() {
   cout << "Circle Destructor called" << endl;
 }
+void Circle::setradius(int r) {
+	radius = r;
+}
+float Circle::calcArea() {
+    return 22.0/7*radius*radius;
+}
 void Circle::display() {
    cout << "Circle Area = " << calcArea() << endl;
 }
 
-float Circle::calcArea() {
-    return 22.0/7*radius*radius;
-}
+
